@@ -209,21 +209,34 @@ body {
     color: white;
     font-family: 'Panton-Light'; }
   .title-container--light .title {
-    text-transform: uppercase;
     font-size: 31px;
     color: white; }
+  .title-container--light .description {
+    font-size: 16px;
+    color: white;
+    font-family: 'Panton-Light'; }
 
 .bg-lighter {
   background-color: #fff;
-  background-size: cover; }
+  background-size: cover;
+  min-height: auto; }
 
 .bg-section {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh; }
 
+.bg-section-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto; }
+
 .bg-darkest {
   background-color: #22201F;
+  background-size: cover; }
+
+.bg-darkest-light {
+  background-color: rgba(104, 93, 91, 0.7);
   background-size: cover; }
 
 .content-block {
@@ -248,7 +261,7 @@ body {
   flex-wrap: nowrap;
   width: 66%;
   margin-left: auto;
-  margin-top: auto;
+  margin-top: 20px;
   margin-bottom: 0px;
   font-size: 16px;
   color: white; }
@@ -303,14 +316,14 @@ body {
   .list-team .container-team {
     display: flex;
     flex-direction: column;
-    max-width: 200px; }
+    max-width: 275px; }
     .list-team .container-team .avatar {
       width: 200px;
-      height: auto; }
+      height: 285px; }
     .list-team .container-team .avatar-info {
       font-size: 16px;
       color: white;
-      font-family: 'Panton-Regular';
+      font-family: 'Panton-Light';
       margin-top: 20px; }
       .list-team .container-team .avatar-info h6 {
         font-family: 'Panton-Bold'; }
@@ -319,46 +332,35 @@ body {
   font-family: 'Panton-Bold';
   text-transform: inherit; }
 
-.text--darkest {
+.media-box {
+  display: block;
+  width: 100%; }
+  .media-box .img-media {
+    max-width: 100%; }
+
+.text-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   color: #685D5B;
-  font-size: inherit;
-  font-family: inherit; }
+  opacity: .6;
+  text-transform: uppercase;
+  font-family: 'Panton-Light'; }
 
-.team-bg {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  max-height: 500px;
-  min-height: 300px; }
+.block-center {
+  display: flex;
+  justify-content: center;
+  font-family: 'Panton-Light';
+  color: #685D5B;
+  text-align: center;
+  position: relative;
+  z-index: 1; }
 
-#Team {
-  display: block; }
-  @media screen and (max-width: 575.98px) {
-    #Team {
-      display: none; } }
-  @media screen and (min-width: 576px) and (max-width: 767.99px) {
-    #Team {
-      display: none; } }
-  @media screen and (min-width: 768px) {
-    #Team {
-      display: block; } }
-
-#Team2 {
-  display: block; }
-  @media screen and (max-width: 575.98px) {
-    #Team2 {
-      display: block; } }
-  @media screen and (min-width: 576px) and (max-width: 767.99px) {
-    #Team2 {
-      display: block; } }
-  @media screen and (min-width: 768px) {
-    #Team2 {
-      display: none; } }
-
-.contact-info {
+contact-info {
   color: white;
   font-family: 'Panton-Regular';
   font-size: 16px; }
-  .contact-info h6 {
+  contact-info h6 {
     font-family: 'Panton-Bold'; }
 
 .form-contact {
@@ -427,6 +429,56 @@ body {
         font-family: 'Panton-Light';
         color: white;
         padding: 10px 20px; }
+
+.text-block--3 {
+  width: 80%;
+  color: white;
+  font-size: 16px;
+  font-family: 'Panton-Light';
+  padding-left: 18px; }
+
+.content-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto; }
+
+.label-title {
+  font-family: 'Panton-Bold';
+  text-transform: inherit; }
+
+.text--darkest {
+  color: #685D5B;
+  font-size: inherit;
+  font-family: inherit; }
+
+.portfolio-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .portfolio-list .portfolio-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 275px;
+    min-height: auto;
+    border-bottom: 1px solid white; }
+    .portfolio-list .portfolio-item .portfolio-img {
+      width: 100%;
+      height: 115px;
+      display: block; }
+      .portfolio-list .portfolio-item .portfolio-img img {
+        width: 200px;
+        min-height: auto; }
+    .portfolio-list .portfolio-item .portfolio-description {
+      margin-top: 15px;
+      color: white;
+      font-size: inherit;
+      font-family: inherit;
+      margin-bottom: 30px; }
+
+.social-media {
+  width: 50px; }
 
 .navigation {
   margin-top: -100px; }
@@ -570,7 +622,7 @@ body {
   width: 50%;
   text-align: left;
   padding-left: 15px;
-  margin-top: 15%;
+  margin-top: 20%;
   margin-bottom: 5%; }
   @media screen and (max-width: 575.98px) {
     .text-container {
@@ -585,7 +637,30 @@ body {
   @media screen and (min-width: 991.99px) and (max-width: 1200px) {
     .text-container {
       width: 80%; } }
-  .text-container .header-text {
+
+.text-container--left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  margin-left: auto; }
+  @media screen and (max-width: 575.98px) {
+    .text-container--left {
+      width: 100%;
+      padding-left: 0px; } }
+  @media screen and (min-width: 576px) and (max-width: 767.99px) {
+    .text-container--left {
+      width: 80%; } }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .text-container--left {
+      width: 80%; } }
+  @media screen and (min-width: 991.99px) and (max-width: 1200px) {
+    .text-container--left {
+      width: 80%; } }
+  .text-container--left .header-text {
     width: 100%;
     color: white;
     font-family: 'Panton-Light';
@@ -594,12 +669,12 @@ body {
     line-height: 103px;
     letter-spacing: 8px; }
     @media screen and (max-width: 575.98px) {
-      .text-container .header-text {
+      .text-container--left .header-text {
         font-size: 42px;
         letter-spacing: 3px;
         line-height: 61px; } }
     @media screen and (min-width: 576px) and (max-width: 768px) {
-      .text-container .header-text {
+      .text-container--left .header-text {
         letter-spacing: 5px;
         line-height: 80px; } }
 
@@ -1086,5 +1161,79 @@ body {
   @media screen and (min-width: 576px) and (max-width: 768px) {
     .right-i {
       display: none; } }
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 26rem;
+  min-height: 192px;
+  word-wrap: break-word;
+  background-color: #685d5b;
+  background-clip: border-box;
+  color: white;
+  border-radius: 0rem; }
+  .card.card--light {
+    background-color: rgba(104, 93, 91, 0.7); }
+  .card.card--lighter {
+    background-color: rgba(104, 93, 91, 0.5); }
+  .card .card-body {
+    padding: 1.25rem 2.5rem;
+    color: white;
+    font-family: 'Panton-Light'; }
+
+.card-divider {
+  width: 100%;
+  border-bottom: 1px solid white; }
+
+.card-multicolum {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+  word-wrap: break-word;
+  background-color: #685d5b;
+  background-clip: border-box;
+  color: white;
+  border-radius: 0rem; }
+  .card-multicolum .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem 2.5rem; }
+
+.block-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  min-height: auto; }
+  .block-card .img-box--card {
+    width: 100%;
+    min-height: auto; }
+    .block-card .img-box--card .img-art {
+      width: 60px; }
+  .block-card .text-box--card {
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Panton-Light'; }
+
+.card-body-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 /*# sourceMappingURL=maps/theme.css.map */

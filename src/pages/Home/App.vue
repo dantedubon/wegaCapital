@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-darkest">
+      <section class="bg-darkest">
         <div class="page-container" style="min-height: auto;">
             <div class="title-container--light">
                 <h3 class="title">Kontakt</h3>
@@ -10,19 +10,19 @@
                             </h6>
                             <p>Sporerstraße 3<br>
                                 80333 München
-                                </p>
+                            </p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <form>
+                       <form @submit="sendEmail">
                             <div class="form-group ">
-                                <textarea class="form-control form-contact" id="exampleFormControlTextarea1" rows="3" placeholder="Ihre Anfrage"></textarea>
+                                <textarea v-model="message" class="form-control form-contact" id="exampleFormControlTextarea1" rows="3" placeholder="Ihre Anfrage"></textarea>
                               </div>
-                              <button type="button" class="btn btn-lightest">Senden</button>
+                              <button type="submit" class="btn btn-lightest">Senden</button>
                         </form>
-                    </div>   
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -31,12 +31,30 @@
 <script>
 
 
+
 export default {
   name: 'App',
-  components: {
+   data() {
+    return {
+      message:''
+    }
+  },
+  methods:{
+    sendEmail: async function(e){
+      
+        this.axios.post(process.env.VUE_APP_MAIL_WEGA, {message:this.message })
+        .then(() => console.log("ok"))
+        .catch(e=> console.log(e))
+
+        this.message=''
     
+         e.preventDefault()
+      }
+    
+   
+    }
   }
-}
+
 </script>
 
 <style>

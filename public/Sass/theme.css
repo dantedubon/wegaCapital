@@ -235,6 +235,11 @@ body {
   background-color: #22201F;
   background-size: cover; }
 
+.bg-darkest--2 {
+  background-color: #403836;
+  background-size: cover;
+  min-height: auto; }
+
 .bg-darkest-light {
   background-color: rgba(104, 93, 91, 0.7);
   background-size: cover; }
@@ -454,7 +459,7 @@ contact-info {
 .portfolio-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   flex-wrap: wrap; }
   .portfolio-list .portfolio-item {
     position: relative;
@@ -480,6 +485,19 @@ contact-info {
 .social-media {
   width: 50px; }
 
+.team-bg {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-height: 500px;
+  min-height: 300px; }
+
+.contact-info {
+  color: white;
+  font-family: 'Panton-Light'; }
+  .contact-info a {
+    color: white;
+    text-decoration: none; }
+
 .navigation {
   margin-top: -100px; }
   .navigation .navbar-wega {
@@ -499,7 +517,7 @@ contact-info {
       justify-content: space-between;
       align-items: center;
       padding: 20px; }
-      .navigation .navbar-wega .company-logo .nav-item-cia .nav-link {
+      .navigation .navbar-wega .company-logo .nav-item-company .nav-link {
         display: block;
         padding: 10px 20px;
         color: white;
@@ -637,6 +655,23 @@ contact-info {
   @media screen and (min-width: 991.99px) and (max-width: 1200px) {
     .text-container {
       width: 80%; } }
+  .text-container .header-text {
+    width: 100%;
+    color: white;
+    font-family: 'Panton-Light';
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 103px;
+    letter-spacing: 8px; }
+    @media screen and (max-width: 575.98px) {
+      .text-container .header-text {
+        font-size: 42px;
+        letter-spacing: 3px;
+        line-height: 61px; } }
+    @media screen and (min-width: 576px) and (max-width: 768px) {
+      .text-container .header-text {
+        letter-spacing: 5px;
+        line-height: 80px; } }
 
 .text-container--left {
   display: flex;
@@ -1221,10 +1256,12 @@ contact-info {
   min-height: auto; }
   .block-card .img-box--card {
     width: 100%;
-    min-height: auto; }
+    min-height: auto;
+    text-align: center; }
     .block-card .img-box--card .img-art {
       width: 60px; }
   .block-card .text-box--card {
+    text-align: center;
     margin-top: 20px;
     color: white;
     font-size: 16px;

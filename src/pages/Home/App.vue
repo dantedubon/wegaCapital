@@ -11,6 +11,7 @@
                             <p>Sporerstraße 3<br>
                                 80333 München
                             </p>
+                             <a href="#"> info@wenvest.capital</a>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">

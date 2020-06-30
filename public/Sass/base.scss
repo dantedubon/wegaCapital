@@ -198,6 +198,11 @@ body {
     background-color: #22201F;
     background-size: cover;
 }
+.bg-darkest--2{
+    background-color: #403836;
+    background-size: cover;
+    min-height: auto;
+}
 .bg-darkest-light{
     background-color:rgba(104, 93, 91, .7);
     background-size: cover;
@@ -450,7 +455,7 @@ contact-info{
 .portfolio-list{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
     .portfolio-item{
         position: relative;
@@ -479,4 +484,18 @@ contact-info{
 }
 .social-media{
     width: 50px;
+}
+.team-bg{
+    background-repeat:no-repeat;
+    background-size: 100%;
+    max-height: 500px;
+    min-height: 300px;
+}   
+.contact-info{
+    color: white;
+    font-family: 'Panton-Light';
+    a{
+        color: white;
+        text-decoration:none;
+    }
 }

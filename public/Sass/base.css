@@ -192,7 +192,7 @@ body {
     font-size: 16px;
     color: #685D5B; }
   .title-container .title {
-    font-family: 'Panton-Bold';
+    font-family: 'Panton-Regular';
     text-transform: inherit;
     font-size: 31px;
     color: #685D5B; }
@@ -241,7 +241,7 @@ body {
   min-height: auto; }
 
 .bg-darkest-light {
-  background-color: rgba(104, 93, 91, 0.7);
+  background-color:#685D5B;
   background-size: cover; }
 
 .content-block {
@@ -355,7 +355,7 @@ body {
 .block-center {
   display: flex;
   justify-content: center;
-  font-family: 'Panton-Light';
+  font-family: 'Panton-Bold';
   color: #685D5B;
   text-align: center;
   position: relative;

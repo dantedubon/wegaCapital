@@ -192,7 +192,7 @@ body {
     font-size: 16px;
     color: #685D5B; }
   .title-container .title {
-    font-family: 'Panton-Bold';
+    font-family: 'Panton-Regular';
     text-transform: inherit;
     font-size: 31px;
     color: #685D5B; }
@@ -241,7 +241,7 @@ body {
   min-height: auto; }
 
 .bg-darkest-light {
-  background-color: rgba(104, 93, 91, 0.7);
+  background-color: #685D5B;
   background-size: cover; }
 
 .content-block {
@@ -355,7 +355,7 @@ body {
 .block-center {
   display: flex;
   justify-content: center;
-  font-family: 'Panton-Light';
+  font-family: 'Panton-Bold';
   color: #685D5B;
   text-align: center;
   position: relative;
@@ -661,17 +661,17 @@ contact-info {
     font-family: 'Panton-Light';
     text-transform: uppercase;
     font-size: 70px;
-    line-height: 103px;
+    line-height: 75px;
     letter-spacing: 8px; }
     @media screen and (max-width: 575.98px) {
       .text-container .header-text {
         font-size: 42px;
         letter-spacing: 3px;
-        line-height: 61px; } }
+        line-height: 40px; } }
     @media screen and (min-width: 576px) and (max-width: 768px) {
       .text-container .header-text {
         letter-spacing: 5px;
-        line-height: 80px; } }
+        line-height: 60px; } }
 
 .text-container--left {
   display: flex;
@@ -1221,7 +1221,7 @@ contact-info {
   .card .card-body {
     padding: 1.25rem 2.5rem;
     color: white;
-    font-family: 'Panton-Light'; }
+    font-family: 'Panton-Bold'; }
 
 .card-divider {
   width: 100%;
@@ -1265,7 +1265,7 @@ contact-info {
     margin-top: 20px;
     color: white;
     font-size: 16px;
-    font-family: 'Panton-Light'; }
+    font-family: 'Panton-Bold'; }
 
 .card-body-inline {
   display: flex;

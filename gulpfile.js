@@ -6,7 +6,7 @@ const multiDest = require('gulp-multi-dest');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const buildCssCore = function (done) {
-    src(['./Sass/theme.scss', './Sass/*.scss'])
+    src(['./public/Sass/theme.scss', './public/Sass/*.scss'])
         .pipe(count({
             getFileCount: function (fileCount) {
                 console.log(`SASS files to process ${fileCount}`);
@@ -14,8 +14,8 @@ const buildCssCore = function (done) {
         }))
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write('./maps'))
-        .pipe(multiDest(['./Sass'], {
+        .pipe(sourcemaps.write('./public/maps'))
+        .pipe(multiDest(['./public/Sass'], {
             mode: 0755
         }))
         .pipe(browserSync.stream());
@@ -24,8 +24,8 @@ const buildCssCore = function (done) {
 
 ;
 const serve = series( buildCssCore, function (done) {  
-    watch(['./Sass/**/*.scss', './Sass/*.scss'], buildCssCore);
-    watch("./*.html").on('change', browserSync.reload);
+    watch(['./public/Sass/**/*.scss', './public/Sass/*.scss'], buildCssCore);
+    watch("./public/*.html").on('change', browserSync.reload);
     browserSync.init({
         serveStatic: ['.'],
     });

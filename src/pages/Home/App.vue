@@ -1,25 +1,27 @@
 <template>
       <section class="bg-darkest">
-        <div class="page-container" style="min-height: auto;">
+        <div class="page-container mt-0" style="min-height: auto;">
             <div class="title-container--light">
-                <h3 class="title">Kontakt</h3>
+                <h3 class="title">Contact</h3>
                 <div class="row mt-5">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <div class="contact-info">
-                            <h6>WEGA Invest GmbH
+                            <h6>WENVEST Capital GmbH
                             </h6>
                             <p>Sporerstraße 3<br>
                                 80333 München
+
                             </p>
-                             <a href="#"> info@wenvest.capital</a>
+                             <a  class="link-w" href="#"> info@wenvest.capital</a>
+                         
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                        <form @submit="sendEmail">
                             <div class="form-group ">
-                                <textarea v-model="message" class="form-control form-contact" id="exampleFormControlTextarea1" rows="3" placeholder="Ihre Anfrage"></textarea>
+                                <textarea v-model="message" class="form-control form-contact" id="exampleFormControlTextarea1" rows="3" placeholder="Your question"></textarea>
                               </div>
-                              <button type="submit" class="btn btn-lightest">Senden</button>
+                              <button type="submit" class="btn btn-lightest">Send</button>
                         </form>
                     </div>
                 </div>

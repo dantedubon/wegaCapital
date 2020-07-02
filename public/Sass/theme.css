@@ -194,7 +194,7 @@ body {
     color: #685D5B;
     font-family: 'Panton-Light'; }
   .title-container .title {
-    font-family: 'Panton-Regular';
+    font-family: 'Panton-Bold';
     text-transform: inherit;
     font-size: 31px;
     color: #685D5B; }
@@ -235,7 +235,7 @@ body {
   min-height: auto; }
 
 .bg-darkest {
-  background-color: #22201F;
+  background-color: rgba(62, 58, 57, 1);
   background-size: cover; }
 
 .bg-darkest--2 {
@@ -244,7 +244,7 @@ body {
   min-height: auto; }
 
 .bg-darkest-light {
-  background-color: rgba(104, 93, 91, 0.7);
+  background-color: rgba(104, 93, 91, 1);
   background-size: cover; }
 
 .content-block {
@@ -708,7 +708,7 @@ contact-info {
   width: 50%;
   text-align: left;
   padding-left: 15px;
-  margin-top: 20%;
+  margin-top: 25%;
   margin-bottom: 5%; }
   @media screen and (max-width: 575.98px) {
     .text-container {
@@ -729,17 +729,17 @@ contact-info {
     font-family: 'Panton-Light';
     text-transform: uppercase;
     font-size: 70px;
-    line-height: 103px;
+    line-height: 75px;
     letter-spacing: 8px; }
     @media screen and (max-width: 575.98px) {
       .text-container .header-text {
         font-size: 42px;
         letter-spacing: 3px;
-        line-height: 61px; } }
+        line-height: 40px; } }
     @media screen and (min-width: 576px) and (max-width: 768px) {
       .text-container .header-text {
         letter-spacing: 5px;
-        line-height: 80px; } }
+        line-height: 60px; } }
 
 .text-container--left {
   display: flex;
@@ -1309,7 +1309,7 @@ contact-info {
         left: 50%;
         margin-left: -2px; } }
   .card.card--light {
-    background-color: rgba(104, 93, 91, 0.7);
+    background-color: rgba(104, 93, 91, 0.4);
     -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.2))); }
     @media screen and (max-width: 575.98px) {
       .card.card--light {
@@ -1337,7 +1337,7 @@ contact-info {
           left: 50%;
           margin-left: -2px; } }
   .card.card--lighter {
-    background-color: rgba(104, 93, 91, 0.5);
+    background-color: rgba(104, 93, 91, 0.76);
     -webkit-box-reflect: below 10px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.2))); }
     @media screen and (max-width: 575.98px) {
       .card.card--lighter {
@@ -1385,7 +1385,7 @@ contact-info {
   min-width: 0;
   width: 100%;
   word-wrap: break-word;
-  background-color: #685d5b;
+  background-color: rgba(104, 93, 91, 0.71);
   background-clip: border-box;
   color: white;
   border-radius: 0rem; }
